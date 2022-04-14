@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.swiper-pagination-bullet-active {
+    background-color: green;
+}
+/* .swiper-button-disabled{
+    background-color: rgb(146, 236, 146);
+} */
+.swiper-button-disabled svg .cls-1a{
+    fill: red;
+}
