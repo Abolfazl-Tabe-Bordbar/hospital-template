@@ -5,17 +5,17 @@ $(document).ready(function () {
     var mini_header = document.getElementById("mini_header");
     show_mini_header.addEventListener("click",function () {
        mini_header.style.display = "flex";
-       document.body.style.overflow = "hidden"; 
+       document.body.style.overflowY = "hidden"; 
     });
     cloes_mini_header.addEventListener("click",function () {
        mini_header.style.display = "none";
-       document.body.style.overflow = "auto"; 
+       document.body.style.overflowY = "auto"; 
     });
 
     $(window).resize(function () {
         if (window.innerWidth > 1024) {
             mini_header.style.display = "none";
-            document.body.style.overflow = "auto"; 
+            document.body.style.overflowY = "auto"; 
         }
     });
     AOS.init();
